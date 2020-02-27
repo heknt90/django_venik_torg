@@ -1,0 +1,53 @@
+{
+  "name": "django_venik_torg",
+  "version": "1.0.0",
+  "description": "Учебный практический проект по созданию сайта на Django. Взят из книги 'Django: пратика созданияWeb-сайтов на Python' автора В. Дронов",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://XpyweI3@bitbucket.org/artemnicotineteam/django-fullstack.git"
+  },
+  "keywords": [
+    "python",
+    "django",
+    "javascript",
+    "scss",
+    "webpack",
+    "gulp"
+  ],
+  "author": "https://bitbucket.org/%7B0c2df836-1cdb-4a5b-8991-4e076552cf5c%7D/",
+  "license": "GPL-3.0",
+  "homepage": "https://bitbucket.org/artemnicotineteam/django-fullstack#readme",
+  "browserslist": [
+    "ie 11",
+    "last 3 version",
+    "> 1%"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "autoprefixer": "^9.7.4",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "bootstrap": "^4.4.1",
+    "browser-sync": "^2.26.7",
+    "child_process": "^1.0.2",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-svgstore": "^7.0.1",
+    "mqpacker": "^7.0.0",
+    "webpack": "^4.41.6",
+    "webpack-stream": "^5.2.1",
+    "yargs": "^15.1.0"
+  }
+}
