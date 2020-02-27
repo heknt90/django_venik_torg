@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'easy_thumbnails',
     'taggit',
     'precise_bbcode',
+
+    'main',
 ]
 
 MIDDLEWARE = [
@@ -133,6 +135,7 @@ MEDiA_URL = '/media/'
 
 LOGIN_URL = "login"
 LOGOUT_URL = "logout"
+LOGIN_REDIRECT_URL = "main"
 
 SITE_ID = 1
 

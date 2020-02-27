@@ -24,7 +24,13 @@
 @import 'animations/connected';
 
 // Файл со стилями из книги
-@import 'all-in-one.scss';
+// @import 'all-in-one.scss';
+
+@import 'base/login_logout.scss';
+@import 'base/common.scss';
+@import 'base/forms.scss';
+
+@import 'pages/mainpage.scss';
 
 
 /**
