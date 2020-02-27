@@ -1,0 +1,4 @@
+@mixin pseudo-start($a: auto, $b: $a) {
+    content: "";
+    @include size($a, $b);
+}

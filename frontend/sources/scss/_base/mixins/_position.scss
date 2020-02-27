@@ -1,0 +1,4 @@
+@mixin absolute($l:auto, $r:auto, $t:auto, $b:auto) {
+    position: absolute;
+    left: $l; right: $r; top: $t; bottom: $b;
+}

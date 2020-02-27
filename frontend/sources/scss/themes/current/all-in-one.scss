@@ -1,0 +1,64 @@
+body {
+    color: #000;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.form-field {
+    width: 100%;
+    margin: {
+        top: 20px;
+        right: 0;
+        bottom: 20px;
+        left: 0;  
+    }
+
+    .help {
+        font-size: smaller;
+        font-style: italic;
+    }
+
+    .label {
+        margin-bottom: 2px;
+    }
+
+    .control {
+
+        input[type=name],
+        input[type=password],
+        input[type=number],
+        input[type=file],
+        textarea,
+        select {
+            width: 100%;
+        }
+    }
+}
+
+.submit-button {
+    width: 100%;
+}
+
+.errors-list .error-description {
+    color: #ff0000;
+}
+
+
+// login_logout
+
+#ll {
+    width: 160px;
+    margin: {
+        top: 50px;
+        right: auto;
+        bottom: 0;
+        left: auto;
+    }; 
+    padding: 30px;
+    border: 1px solid #aaa;
+
+    h2 {
+        margin-top: 0;
+    }
+}

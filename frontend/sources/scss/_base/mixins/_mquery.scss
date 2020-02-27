@@ -1,0 +1,85 @@
+/* Сокращение кода 
+    Вместо :
+
+    @media screen and (min-width: some-param) {
+      ...
+    }
+
+    Пишем :
+
+    @include mquery(768px) {
+      ...
+    }
+*/
+
+@mixin mquery($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+/*
+  Миксины для работы с конкретными размерами экрана размерами из переменных
+
+    m_desktop, m_smDesktop, m_tablet, m_smTablet, m_phone, m_smPhone
+
+  Переменные находятся в файле design-system/vars.scss:
+      
+      $desktopWidth            : 1280px;
+      $smDesktopWidth          : 1024px;
+      $tabletWidth             : 768px;
+      $smTabletWidth           : 640px;
+      $phoneWidth              : 480px;
+      $smPhoneWidth            : 320px;
+
+      Пример:
+        mq_tablet {
+          font-size: 10px;
+        }
+
+      Вернет:
+        @media screen and (min-width: 768px) {
+          font-size: 10px;
+        }
+*/
+
+// Экран 1280px
+@mixin mq_desktop {
+  @include mquery($desktopWidth) {
+    @content;
+  }
+}
+
+// Маленький экран 1024px
+@mixin mq_smDesktop {
+  @include mquery($smDesktopWidth) {
+    @content;
+  }
+}
+
+// Планшет 768px
+@mixin mq_tablet {
+  @include mquery($tabletWidth) {
+    @content;
+  }
+}
+
+// Маленький планшет 640px
+@mixin mq_smTablet {
+  @include mquery($smTabletWidth) {
+    @content;
+  }
+}
+
+// Телефон 480px
+@mixin mq_phone {
+  @include mquery($phoneWidth) {
+    @content;
+  }
+}
+
+// Маленький телефон 320px
+@mixin mq_smPhone {
+  @include mquery($smPhoneWidth) {
+    @content;
+  }
+}
