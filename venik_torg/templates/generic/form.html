@@ -3,7 +3,7 @@
     {{ field}}
 {% endfor %}
 {% for field in form.visible_fields %}
-    {% if field.name == "honypot" %}
+    {% if field.name == "honeypot" %}
         <div class="honeypot">{{ field }}</div>
     {% else %}
         <div class="form-field">

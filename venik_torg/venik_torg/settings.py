@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'precise_bbcode',
 
     'main',
+    'guestbook',
 ]
 
 MIDDLEWARE = [

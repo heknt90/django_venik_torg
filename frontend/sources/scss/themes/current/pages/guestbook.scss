@@ -1,0 +1,62 @@
+.form {
+    width: 400px;
+    margin: {
+        top: 20px;
+        right: 0;
+        bottom: 20px;
+        left: 0;
+    };
+}
+
+.bottom-indent {
+    margin-bottom: 50px;
+}
+
+.guestbook {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+
+    .user {
+        font-weight: bold;
+    }
+
+    .posted {
+        font-style: italic;
+        text-align: right;
+        width: 200px;
+    }
+
+    .content {
+        padding-top: 20px;
+    }
+}
+
+.honeypot {
+    display: none;
+}
+
+#messages-list {
+    background-color: #eee;
+    padding: 5px;
+
+    .ERROR {
+        color: #ff0000;
+    }
+}
+
+#pagination {
+    margin-top: 20px;
+
+    #previous-page {
+        float: left;
+    }
+
+    #num-pages {
+        text-align: center;
+    }
+
+    #next-page {
+        float: right;
+    }
+}
