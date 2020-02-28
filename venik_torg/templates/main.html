@@ -11,11 +11,15 @@
             <li><a href=" {{ page_url }} " {% if page_url == current_url %}class="current"{% endif %}>Главная</a></li>
             {% url 'guestbook' as page_url %}
             <li><a href="{{ page_url }}" {% if page_url == current_url %} class="current"{% endif %}>Гостевая</a></li>
+            {% url 'news_index' as page_url %}
+            <li><a href="{{ page_url }}" {% if page_url == current_url %} class="current"{% endif %}>Новости</a></li>
             
             {% if user.is_authenticated %}
                 <li class="indeted"><a href="/admin/">Админка</a></li>
                 <li class="indeted"><a href=" {% url 'logout' %} ">Выйти</a></li>
             {% endif %}
+
+            
         </ul>
     </div>
     <div id="main">
